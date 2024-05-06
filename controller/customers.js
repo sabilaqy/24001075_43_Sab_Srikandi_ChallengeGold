@@ -111,7 +111,7 @@ router.put('/update/:id', async (req, res)=>{
         const newData = newRawData.rows[0];
         console.log(newData);
         await client.query('COMMIT');
-        res.redirect('/customers/' + id);
+        res.redirect('/customers');
     } catch (error) {
         console.log(error);
         await client.query('ROLLBACK');

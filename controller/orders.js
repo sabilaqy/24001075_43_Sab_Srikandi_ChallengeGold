@@ -25,7 +25,7 @@ router.get('/:id', async (req, res)=>{
 })
 
 // 3. POST API
-router.post('/create/:id', async (req, res)=>{
+router.post('/create', async (req, res)=>{
     // ambil data dari customer
     const payload = req.body;
     const quantity = payload.quantity;
